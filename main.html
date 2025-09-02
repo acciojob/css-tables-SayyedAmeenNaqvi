@@ -1,63 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Styled Table</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
-        table {
-            border-collapse: separate;   
-            border-spacing: 0 10px;    
-            width: auto;
-        }
-        th, td {
-            border: 2px solid #ccc;
-            padding: 12px 20px;
-            border-radius: 6px;
-            background-color: #f9f9f9;
-            min-width: 140px;
-            text-align: left;
-        }
-        th {
-            font-weight: bold;
-            background-color: #fff;  
-        }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Styled Table</title>
+<style>
+  :root{
+    --gap-x: 14px;       
+    --gap-y: 16px;        
+    --cell-w: 240px;    
+    --radius: 12px;      
+    --border: #cfcfcf;    
+    --stripe: #eeeeee;   
+  }
 
-        td {
-            background-color: #fff;
-        }
-    </style>
+  body { font-family: Arial, sans-serif; padding: 20px; }
+
+  table{
+    border-collapse: separate;        /* keep gaps */
+    border-spacing: var(--gap-x) var(--gap-y);
+  }
+
+  th, td{
+    min-width: var(--cell-w);
+    padding: 14px 22px;
+    border: 2px solid var(--border);
+    border-radius: var(--radius);
+    background: #fff;                 /* default white cells */
+    text-align: left;
+  }
+
+  thead th{
+    font-size: 24px;
+    font-weight: 800;                 
+    background: #fff;               
+  }
+
+ 
+  tbody tr:nth-child(even) td{
+    background: var(--stripe);
+  }
+</style>
 </head>
 <body>
-    <table>
-        <thead>
-            <tr>
-                <th>Table-Header 1</th>
-                <th>Table-Header 2</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Cell 1</td>
-                <td>Cell 2</td>
-            </tr>
-            <tr>
-                <td>Cell 4</td>
-                <td>Cell 5</td>
-            </tr>
-            <tr>
-                <td>Cell 7</td>
-                <td>Cell 8</td>
-            </tr>
-            <tr>
-                <td>Cell 9</td>
-                <td>Cell 10</td>
-            </tr>
-        </tbody>
-    </table>
+  <table>
+    <thead>
+      <tr>
+        <th>Table-Header 1</th>
+        <th>Table-Header 2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Cell 1</td><td>Cell 2</td></tr>
+      <tr><td>Cell 4</td><td>Cell 5</td></tr>
+      <tr><td>Cell 7</td><td>Cell 8</td></tr>
+      <tr><td>Cell 9</td><td>Cell 10</td></tr>
+    </tbody>
+  </table>
 </body>
 </html>
