@@ -10,30 +10,25 @@
             padding: 20px;
         }
         table {
-            border-collapse: separate;
-            border-spacing: 8px 8px;
-            border-radius: 8px;
-            border: none;
+            border-collapse: separate;   
+            border-spacing: 0 10px;    
+            width: auto;
         }
         th, td {
-            border: 1.5px solid #ccc;
+            border: 2px solid #ccc;
             padding: 12px 20px;
-            border-radius: 10px;
-            min-width: 120px;
-            font-weight: normal;
-            font-size: 16px;
-            background-color: #fff;
+            border-radius: 6px;
+            background-color: #f9f9f9;
+            min-width: 140px;
             text-align: left;
         }
         th {
-            font-weight: 700;
-            background-color: #fff;
-            cursor: default;
+            font-weight: bold;
+            background-color: #fff;  
         }
-        /* Highlighted cells with light gray background */
-        tr:nth-child(3) td, /* cell 4 and 5 row */
-        tr:nth-child(5) td  { /* cell 9 and 10 row */
-            background-color: #eee;
+
+        td {
+            background-color: #fff;
         }
     </style>
 </head>
@@ -66,4 +61,3 @@
     </table>
 </body>
 </html>
-
