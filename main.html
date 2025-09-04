@@ -1,55 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Styled Table</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 40px;
-      background: #fff;
-    }
-    table {
-      border-collapse: separate;
-      border-spacing: 6px 6px;
-      border: none;
-    }
-    th, td {
-      padding: 14px 24px;
-      border: 1.5px solid #ccc;
-      border-radius: 10px;
-      text-align: left;
-      min-width: 130px;
-    }
-    th {
-      font-weight: bold;
-      font-size: 20px;
-      background-color: white;
-    }
-    tr:nth-child(even) td {
-      background-color: #e8e8e8;
-    }
-    tr:nth-child(odd) td {
-      background-color: #fff;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled HTML Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        table {
+            border-collapse: separate;
+            border-spacing: 10px;
+            background: #fff;
+            padding: 10px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            text-align: center;
+            padding: 15px 30px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            font-weight: normal;
+        }
+
+        th {
+            background-color: #f7f7f7;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        tr:nth-child(odd) td {
+            background-color: #f7f7f7;
+        }
+    </style>
 </head>
 <body>
-  <table>
-    <thead>
-      <tr>
-        <th>Table-Header 1</th>
-        <th>Table-Header 2</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td>Cell 1</td><td>Cell 2</td></tr>
-      <tr><td>Cell 4</td><td>Cell 5</td></tr>
-      <tr><td>Cell 7</td><td>Cell 8</td></tr>
-      <tr><td>Cell 9</td><td>Cell 10</td></tr>
-    </tbody>
-  </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Table-Header 1</th>
+                <th>Table-Header 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cell 1</td>
+                <td>Cell 2</td>
+            </tr>
+            <tr>
+                <td>Cell 4</td>
+                <td>Cell 5</td>
+            </tr>
+            <tr>
+                <td>Cell 7</td>
+                <td>Cell 8</td>
+            </tr>
+            <tr>
+                <td>Cell 9</td>
+                <td>Cell 10</td>
+            </tr>
+        </tbody>
+    </table>
+
 </body>
 </html>
-
