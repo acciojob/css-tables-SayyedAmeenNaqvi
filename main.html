@@ -1,46 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Styled Table</title>
-<style>
-  :root{
-    --gap-x: 14px;       
-    --gap-y: 16px;        
-    --cell-w: 240px;    
-    --radius: 12px;      
-    --border: #cfcfcf;    
-    --stripe: #eeeeee;   
-  }
-
-  body { font-family: Arial, sans-serif; padding: 20px; }
-
-  table{
-    border-collapse: separate;        /* keep gaps */
-    border-spacing: var(--gap-x) var(--gap-y);
-  }
-
-  th, td{
-    min-width: var(--cell-w);
-    padding: 14px 16px;
-    border: 1.5px solid var(--border);
-    border-radius: var(--radius);
-    background: #fff;
-    text-align: left;
-    font-weight: 600;
-  }
-
-  thead th{
-    font-size: 20px;
-    font-weight: 800;                 
-    background: #fff;               
-  }
-
-  tbody tr:nth-child(even) td{
-    background: var(--stripe);
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Styled Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background: #fff;
+    }
+    table {
+      border-collapse: separate;
+      border-spacing: 6px 6px;
+      border: none;
+    }
+    th, td {
+      padding: 14px 24px;
+      border: 1.5px solid #ccc;
+      border-radius: 10px;
+      text-align: left;
+      min-width: 130px;
+    }
+    th {
+      font-weight: bold;
+      font-size: 20px;
+      background-color: white;
+    }
+    tr:nth-child(even) td {
+      background-color: #e8e8e8;
+    }
+    tr:nth-child(odd) td {
+      background-color: #fff;
+    }
+  </style>
 </head>
 <body>
   <table>
@@ -59,3 +52,4 @@
   </table>
 </body>
 </html>
+
